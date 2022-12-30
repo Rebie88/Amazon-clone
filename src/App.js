@@ -44,16 +44,11 @@ function App() {
     
     <div className="App">
       <Routes>
-          <Route path="/" element={<><Header />
-            <Home /></>} />
-          <Route path="/checkout" element={<><Header />
-          <Checkout /></>} />
+        <Route path="/" element={<><Header /><Home /></>} />
+        <Route path="/checkout" element={<><Header /><Checkout /></>} />
         <Route path="/login" element={<Login />} />
         <Route path="/payment" element={<Elements stripe={promise}><Header /><Payment/></Elements>} />
-        <Route path="/orders" element={<><Header /><Orders />  </>} />
-          
-          
-          
+        <Route path="/orders" element={<><Header /><Orders /></>} />
       </Routes>
       <Footer/>
       </div>

@@ -14,11 +14,10 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a lo
 function Home() {
   return (
     <div className="home">
-      <div className="home__container">
-      <Carousel  className='home-image' autoPlay infiniteLoop showStatus={false} showIndicators={false} showThumbs={false} interval={5000}>
+      <Carousel  className="home__container" autoPlay infiniteLoop showStatus={false} showIndicators={false} showThumbs={false} interval={5000}>
           <Link to="/">
             <div>
-                <img
+                <img className='home-image'
                     src={Bp}
                     alt="Amazom_Image"
                 />      
@@ -26,7 +25,7 @@ function Home() {
            </Link>
             <Link to="/">
                 <div>
-                  <img
+                  <img className='home-image'
                       src={Bp2}
                       alt="Amazom_Image"
                   />
@@ -34,7 +33,7 @@ function Home() {
             </Link>
            <Link to="/">
                 <div>
-                  <img
+                  <img className='home-image'
                       src={Bp3}
                       alt="Amazom_Image"
                   />           
@@ -43,7 +42,7 @@ function Home() {
           <Link to="/">
            <div>
               
-                <img
+                <img className='home-image'
                     src="https://images-eu.ssl-images-amazon.com/images/G/02/digital/video/merch2016/Hero/Covid19/Generic/GWBleedingHero_ENG_COVIDUPDATE__XSite_1500x600_PV_en-GB._CB428684220_.jpg"
                     alt="Amazom_Image"
                 />   
@@ -70,38 +69,31 @@ function Home() {
         </div>
         <div className="home__row">
           <Product
-            id="4903850"
-            title="New Apple Watch Series 6 (GPS, 40mm) - Space Gray Aluminum Case with Black Sport Band"
-            price={499.99}
-            rating={4}
-            image="https://images-na.ssl-images-amazon.com/images/I/71yOGVLGWpL._AC_SX679_.jpg"
-          />
+            id="49038501"
+            title="SAM. Women's Carson Bomber"
+            price={425.99}
+            rating={5}
+            image="https://m.media-amazon.com/images/W/WEBP_402378-T2/images/I/71Zb+SuPGeL._AC_UL1500_.jpg"
+        />
+        
 
           <Product
-            id="99903850"
-            title="4K 60FPS Video Camera Camcorder Ultra HD 48MP YouTube Camera Vlogging WiFi Digital Camera Recorder IPS Touch Screen"
-            price={139.99}
-            rating={4}
-            image="https://m.media-amazon.com/images/I/81eUw7H78UL._AC_UY218_.jpg"
+            id="99903851"
+            title="Szory Women's Down Thicken Winter Coat Quilted Warm Puffer Jacket with Removable Fur Hood"
+            price={65.99}
+            rating={5}
+            image="https://m.media-amazon.com/images/W/WEBP_402378-T2/images/G/01/AMAZON_FASHION/2022/Premium_Brands/Winter_2022/LoomBubbler/Premium_LoomBubbler_1000x1000_Outerwear.jpg"
           />
           <Product
             id="3254354345"
-            title="New Apple iPad Pro (12.9-inch, Wi-Fi, 128GB) - Silver (4th Generation)"
-            price={598.99}
+            title="UGG Women's Frankie Sherpa Trucker Jacket"
+            price={198.99}
             rating={4}
-            image="https://images-na.ssl-images-amazon.com/images/I/816ctt5WV5L._AC_SX385_.jpg"
+            image="https://m.media-amazon.com/images/W/WEBP_402378-T2/images/I/81ItDVnYylL._AC_UL1500_.jpg"
           />
-        </div>
-        <div className="home__row">
-          <Product
-            id="90829332"
-            title="Samsung LC49RG90SSUXEN 49' Curved LED Gaming Monitor - Super Ultra Wide Dual WQHD 5120 x 1440"
-            price={1094.98}
-            rating={4}
-            image="https://images-na.ssl-images-amazon.com/images/I/81r8JazRcoL._AC_SL1500_.jpg"
-          />
-        </div>
-        <div className="home__row">
+      </div>
+      
+ <div className="home__row">
           <Product
             id="903850"
             title="2021 1080P Streaming Business Webcam with Microphone & Privacy Cover, AutoFocus, NexiGo N930P HD USB Web Camera, for Zoom Meeting YouTube Skype FaceTime"
@@ -124,7 +116,41 @@ function Home() {
             image="https://media.very.co.uk/i/very/P6LTG_SQ1_0000000071_CHARCOAL_SLf?$300x400_retinamobilex2$"
           />
         </div>
-      </div>
+
+
+        <div className="home__row">
+          <Product
+            id="90829332"
+            title="Samsung LC49RG90SSUXEN 49' Curved LED Gaming Monitor - Super Ultra Wide Dual WQHD 5120 x 1440"
+            price={1094.98}
+            rating={4}
+            image="https://images-na.ssl-images-amazon.com/images/I/81r8JazRcoL._AC_SL1500_.jpg"
+          />
+        </div>
+        <div className="home__row">
+          <Product
+            id="903850"
+            title="adidas Men's Grand Court Sneaker"
+            price={59.99}
+            rating={5}
+            image="https://m.media-amazon.com/images/W/WEBP_402378-T2/images/I/61FbqzPD8TL._AC_UL1500_.jpg"
+          />
+          <Product
+            id="8903851"
+            title="ASICS Men's Gel-Resolution 8 Tennis Shoes"
+            price={120.99}
+            rating={4}
+            image="https://m.media-amazon.com/images/W/WEBP_402378-T2/images/I/5154dNw2l9L._AC_UL1200_.jpg"
+          />
+          <Product
+            id="23445930"
+            title="adidas Men's Gamecourt 2 Tennis Shoe"
+            price={78.99}
+            rating={5}
+            image="https://m.media-amazon.com/images/W/WEBP_402378-T2/images/I/610rYYxl+DL._AC_UL1500_.jpg"
+          />
+        </div>
+     
     </div>
   );
 }
